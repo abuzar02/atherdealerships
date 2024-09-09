@@ -1,0 +1,100 @@
+/* components/Footer.css */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .links > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links > ul > li {
+    display: inline;
+    margin: 20px 15px;
+    margin-bottom: 20px;
+ 
+  }
+  .list li{
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .links ul li  {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+    color: #9e9898;
+  }
+  
+  .links ul .list li:hover {
+    color: #ff6347;
+  } 
+  
+  .copyright p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #9e9898;
+  }
+  .privi {
+    color: #f9f9f9;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 720px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .logo {
+      margin-bottom: 20px;
+    }
+  
+    .links {
+      width: 100%;
+    }
+  
+    .links ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+  
+    .links li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+  
+    .links .list {
+      margin-left: 0;
+      padding: 0;
+    }
+  
+    .copyright {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+  

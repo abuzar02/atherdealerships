@@ -1,0 +1,150 @@
+.left-side {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+  }
+  .main2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 42px;
+    gap: 30px;
+    width: 100%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  form input[type="text"],
+  form input[type="number"],
+  form input[type="email"] {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  
+  form input[type="text"]:focus,
+  form input[type="number"]:focus,
+  form input[type="email"]:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  form input[type="submit"] {
+    background-color: #36424e;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  form input::placeholder {
+    color: #888;
+    font-size: 14px;
+  }
+  .right-side{
+    width: 50%;
+    height: 430px;
+    border-radius: 10px;
+  }
+  .right-side img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  #dealer-benefits{
+    width: 100%;
+  }
+  #dealer-benefits h2{
+    font-size: 35px;
+    font-weight: 500;
+    color: #333;
+  }
+  #dealer-benefits h3{
+    color: #333;
+    font-weight: 500;
+    margin-top: 15px;
+  }
+  .benefit{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  #requirements{
+   width: 50%;
+  }
+  #requirements h2{
+    font-size: 35px;
+    font-weight: 500;
+    color: #333;
+  }
+  #requirements p{
+    color: #7a7878;
+    margin-top: 20px;
+  }
+ 
+  @media only screen and (max-width: 720px) {
+    .left-side {
+      padding: 20px;
+    }
+  
+    form h1 {
+      font-size: 24px;
+    }
+    #requirements{
+      width: 100%;
+     }
+  
+    form input[type="text"],
+    form input[type="number"],
+    form input[type="email"],
+    form input[type="submit"] {
+      font-size: 14px;
+      padding: 10px;
+    }
+    .benefit {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .main2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 42px;
+        gap: 30px;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+  }
+  
