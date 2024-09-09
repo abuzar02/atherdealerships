@@ -403,6 +403,7 @@ transition: all ease 1s;
     display: flex;
     align-items: center;
     cursor: pointer;
+    justify-content: center;
 }
 .ex-aro p{
     font-size: 12px;
