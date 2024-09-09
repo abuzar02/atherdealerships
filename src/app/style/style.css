@@ -195,6 +195,7 @@ header{
 .sec2 img{
  width: 100%;
  height: 100%;
+ object-fit: cover;
  border-radius: 10px;
 transition: all ease 1s;
 }
@@ -203,7 +204,7 @@ transition: all ease 1s;
 }
 .pick{
     width: 100%;
-    height: 60vh;
+    height: 348px;
     position: relative;
     margin-top: 70px;
     border: .2px solid #ccc;
@@ -215,6 +216,7 @@ transition: all ease 1s;
     height: 100%;
     border-radius: 10px;
     transition: all 1s;
+    object-fit: cover;
 }
 .pick img:hover{
     transform: scale(1.1);
@@ -390,6 +392,7 @@ transition: all ease 1s;
     width: 100%;
     height: 100%;
     border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
 }
 .head h1{
     text-align: center;
@@ -437,6 +440,7 @@ transition: all ease 1s;
 .chargeimg img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 10px; 
     transition: all ease 1s;  
 }
