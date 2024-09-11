@@ -42,6 +42,7 @@ import "../style/style.css";
 import { MdCall } from "react-icons/md";
 import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
 import Link from 'next/link';
+import { MdOutlineArrowDropDown } from "react-icons/md";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -49,6 +50,12 @@ const Navbar = () => {
   // Function to toggle the menu open/closed
   const handleMenuToggle = () => {
     setMenuOpen(prevState => !prevState);
+  };
+
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
   return (
@@ -68,8 +75,19 @@ const Navbar = () => {
               <FaXmark />
             </span>
             <ul className='d-flexx'>
-              <Link href="/"><li >Home</li></Link>
-            <Link href="/form"> <li >Dealership</li></Link> 
+              <Link href="/"><li className='color-blk'>Home</li></Link>
+              <Link href="/About"><li className='color-blk'>About</li></Link>
+              <li className='dlr' onClick={toggleDropdown}>
+                Dealership
+                <span><MdOutlineArrowDropDown /></span>
+                {isDropdownOpen && (
+                  <ul className='drop'>
+                    <Link href="/distributor"><li>Distributor</li></Link>
+                    <Link href="/sub"><li>Sub-Dealership</li></Link>
+                    <Link href="/dealership"><li>Dealership</li></Link>
+                  </ul>
+                )}
+              </li>
               <li className='call'>
                 <span><MdCall /></span> Call: 0123456789
               </li>
@@ -77,6 +95,7 @@ const Navbar = () => {
           </div>
         </div>
       </header>
+
     </>
   );
 };

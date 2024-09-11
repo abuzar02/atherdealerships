@@ -1,0 +1,22 @@
+.ab-main{
+    width: 100%;
+    height: 400px;
+}
+.ab-main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pick-content {
+    position: absolute;
+    top: 57px;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 400px;
+  }
+  .pick-content h1 {
+    font-size: 50px;
+    color: #f9f9f9;
+  }

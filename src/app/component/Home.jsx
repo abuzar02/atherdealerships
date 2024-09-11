@@ -234,7 +234,7 @@ const Home = () => {
           </div>
 
           <div className="chargin-box">
-            <div className="chargeimg mt-top">
+            <div className="chargeimg">
               <Image src={at3} alt="not support" />
             </div>
             <div className="content-charge">
