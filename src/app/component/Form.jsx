@@ -96,9 +96,9 @@ const Form = () => {
                 />
                  <input
                     type="text"
-                    name="Investment"
-                    placeholder="Investment"
-                    value={formData.qualification}
+                    name="investment"
+                    placeholder=" Investment ₹ 0,00"
+                    value={formData.investment}
                     onChange={handleChange}
                     required
                 />
