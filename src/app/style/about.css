@@ -1,22 +1,66 @@
-.ab-main{
-    width: 100%;
-    height: 400px;
-}
-.ab-main img{
+  .container{
+    width: 90%;
+    margin: auto;
+  }
+  .sec1img img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-.pick-content {
+    object-fit: contain;
+  }
+  .sec1img{
+    width: 50%;
+    height: 300px;
+  }
+  .front{
+    width: 100%;
+    height: 350px;
+    position: relative;
+  }
+  .about-con{
     position: absolute;
-    top: 57px;
-    padding: 10px;
+    top: 0;
     left: 0;
     right: 0;
     text-align: center;
-    line-height: 400px;
+    line-height: 350px;
   }
-  .pick-content h1 {
+  .about-con h1{
+    color: white;
     font-size: 50px;
-    color: #f9f9f9;
   }
+  .front img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .main-box1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    gap: 20px;
+  }
+  .main-box1 > div{
+    width: 50%;
+  }
+  .main-box1 > div h1{
+      color: rgb(46, 45, 45);
+      font-size: 30px;
+      font-weight: 500;
+  }
+  .main-box1 > div p{
+    color: rgb(99, 98, 98);
+    font-size: 15px;
+  }
+  @media only screen and (max-width: 720px) {
+    .main-box1 {
+      display: flex;
+      flex-direction: column !important;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .main-box1 > div{
+      width: 100%;
+    }
+}

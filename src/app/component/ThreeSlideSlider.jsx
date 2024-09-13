@@ -9,6 +9,7 @@ import Image from 'next/image';
 import banner from '@/app/component/images/banner1.webp'
 import "../style/slide.css"
 import bannerr2 from "../component/images/bannerr2.webp"
+import helmetB from "../component/images/helmet-banner.jpg"
 
 
 
@@ -64,17 +65,7 @@ const ThreeSlideSlider = () => {
         </div>
         <div className='banner'>
           <div className="slide">
-            <video
-              src="https://media.atherenergy.com/Home_SH_desk.mp4"
-              preload="auto"
-              loop
-              playsInline
-              webkit-playsinline
-              x5-playsinline
-              style={{ width: "100%", height: "100%" }}
-              autoPlay
-              muted
-            ></video>
+            <Image src={helmetB}  alt='not found'/>
           </div>
           <div className="contentslide">
             <h1>Introducing Halo & Halo bit</h1>

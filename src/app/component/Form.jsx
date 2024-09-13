@@ -10,6 +10,7 @@ const Form = () => {
         pincode: '',
         email: '',
         qualification: '',
+        investment:'',
         partnershipType: 'Type'
     });
 
@@ -89,6 +90,14 @@ const Form = () => {
                     type="text"
                     name="qualification"
                     placeholder="Qualification"
+                    value={formData.qualification}
+                    onChange={handleChange}
+                    required
+                />
+                 <input
+                    type="text"
+                    name="Investment"
+                    placeholder="Investment"
                     value={formData.qualification}
                     onChange={handleChange}
                     required

@@ -259,8 +259,8 @@ form label {
 }
 
 .thank h1 , p, a{
-  text-align: center;
-  display: flex;
+  /* text-align: center;
+  display: flex; */
   justify-content: center;
   align-items: center;
 }
