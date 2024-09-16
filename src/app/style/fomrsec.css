@@ -258,11 +258,17 @@ form label {
   }
 }
 
-.thank h1 , p, a{
-  /* text-align: center;
-  display: flex; */
+.thank h1{
+  text-align: center;
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+.thank p{
+  text-align: center;
+}
+.thank a{
+  text-align: center;
 }
 .thank img{
   width: 150px;

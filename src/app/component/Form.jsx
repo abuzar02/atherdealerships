@@ -9,8 +9,12 @@ const Form = () => {
         number: '',
         pincode: '',
         email: '',
+        address:'',
+        calling_time:'',
         qualification: '',
         investment:'',
+        property:'',
+        remark:'',
         partnershipType: 'Type'
     });
 
@@ -86,6 +90,20 @@ const Form = () => {
                     value={formData.email}
                     onChange={handleChange}
                 />
+                 <input
+                    type="text"
+                    name="address"
+                    placeholder="Address"
+                    value={formData.address}
+                    onChange={handleChange}
+                />
+                 <input
+                    type="text"
+                    name="calling_time"
+                    placeholder="Calling time"
+                    value={formData.calling_time}
+                    onChange={handleChange}
+                />
                 <input
                     type="text"
                     name="qualification"
@@ -99,6 +117,22 @@ const Form = () => {
                     name="investment"
                     placeholder=" Investment ₹ 0,00"
                     value={formData.investment}
+                    onChange={handleChange}
+                    required
+                />
+                <input
+                    type="text"
+                    name="property"
+                    placeholder="Property"
+                    value={formData.property}
+                    onChange={handleChange}
+                    required
+                />
+                <input
+                    type="text"
+                    name="remark"
+                    placeholder="Remark"
+                    value={formData.remark}
                     onChange={handleChange}
                     required
                 />

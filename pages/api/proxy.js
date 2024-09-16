@@ -1,7 +1,7 @@
 // pages/api/proxy.js
 export default async function handler(req, res) {
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbzsKaBeW4EnSnfG8zKmimu-5JPBjSf8IJ1wm0I3Nw1WkW5PIcsmIdtp5RD9C229pgKi/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbwUVBNnoCCQiVVEynpWJRwgXZVIUdXeoAOyi8D-vCuyeeayXYxnCRFGW8hT7pDGWA/exec', {
         method: 'POST',
         body: JSON.stringify(req.body),
         headers: {

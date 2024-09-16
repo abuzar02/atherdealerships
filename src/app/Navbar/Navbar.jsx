@@ -88,9 +88,8 @@ const Navbar = () => {
                   </ul>
                 )}
               </li>
-              <li className='call'>
-                <span><MdCall /></span> Call: 0123456789
-              </li>
+              <Link href="/charging"><li className='color-blk'>Charging</li></Link>
+              <Link href="/relation"><li className='color-blk'>Relation</li></Link>
             </ul>
           </div>
         </div>
