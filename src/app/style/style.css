@@ -637,7 +637,7 @@ header {
     height: 200px;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgb(255, 245, 245);
+    background-color: black;
     transition: 0.3s;
     z-index: 99999999;
     position: absolute;

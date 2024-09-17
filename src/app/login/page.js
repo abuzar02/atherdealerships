@@ -14,7 +14,7 @@ const Page = () => {
             <label>Email:</label>
             <input type='text' placeholder='Email'/>
             <label>Password:</label>
-            <input type='password' placeholder='Password'/>
+            <input type='text' placeholder='Password'/>
             <input type='submit' placeholder='Login'/>
         </form>
         <div className="google-signin-button">
