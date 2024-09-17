@@ -43,6 +43,7 @@ import { MdCall } from "react-icons/md";
 import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
 import Link from 'next/link';
 import { MdOutlineArrowDropDown } from "react-icons/md";
+import { CiUser } from "react-icons/ci";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -78,7 +79,7 @@ const Navbar = () => {
               <Link href="/"><li className='color-blk'>Home</li></Link>
               <Link href="/About"><li className='color-blk'>About</li></Link>
               <li className='dlr' onClick={toggleDropdown}>
-                Dealership
+                Partnership
                 <span><MdOutlineArrowDropDown /></span>
                 {isDropdownOpen && (
                   <ul className='drop'>
@@ -90,6 +91,7 @@ const Navbar = () => {
               </li>
               <Link href="/charging"><li className='color-blk'>Charging</li></Link>
               <Link href="/relation"><li className='color-blk'>Relation</li></Link>
+              <Link href="/login"><li className='color-blk'>Login</li></Link>
             </ul>
           </div>
         </div>

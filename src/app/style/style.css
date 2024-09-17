@@ -145,7 +145,7 @@ header {
 .d-flex {
   display: flex !important;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
 .d-flexx {
@@ -275,7 +275,7 @@ header {
   height: 150px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #fff5f5;
+  background-color: #050505;
   transition: all ease .3s;
   z-index: 99999999;
   position: absolute;
@@ -283,6 +283,7 @@ header {
 .drop li{
   padding: 10px 5px;
   cursor: pointer;
+  color: #fff !important;
 }
 .color-blk{
   color: #242323;

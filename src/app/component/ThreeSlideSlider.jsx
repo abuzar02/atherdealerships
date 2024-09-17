@@ -10,6 +10,8 @@ import banner from '@/app/component/images/banner1.webp'
 import "../style/slide.css"
 import bannerr2 from "../component/images/bannerr2.webp"
 import helmetB from "../component/images/helmet-banner.jpg"
+import athelmet from "../component/images/athelmet.jpg"
+import atbike from "../component/images/atbike.jpg"
 
 
 
@@ -69,6 +71,25 @@ const ThreeSlideSlider = () => {
           </div>
           <div className="contentslide">
             <h1>Introducing Halo & Halo bit</h1>
+            <button>Know More</button>
+            <button>Pre-book Halo</button>
+          </div>
+        </div>
+
+        <div className='banner'>
+          <Image src={atbike} alt={`Slide `} />
+          <div className="contentslide">
+            <h1>Meet Rizta</h1>
+            <p>From our family to yours</p>
+            <button>Book Know</button>
+            <button>Explore Rizta</button>
+          </div>
+        </div>
+
+        <div className='banner'>
+          <Image src={athelmet} alt={`Slide `} />
+          <div className="contentslide">
+          <h1>Introducing Halo & Halo bit</h1>
             <button>Know More</button>
             <button>Pre-book Halo</button>
           </div>
