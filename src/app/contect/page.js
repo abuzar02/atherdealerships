@@ -1,8 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import "../style/contect.css"
-import thambnel from "../component/images/thumbnail.webp"
-import Link from 'next/link'
+// import thambnel from "../component/images/thumbnail.webp"
 const page = () => {
   return (
     <>
@@ -10,7 +9,7 @@ const page = () => {
         <div className='contect-se1'>
         <h1>Pioneering the electric <br/>revolution in India.</h1>
         <div>
-            <Image src={thambnel} alt='not support'/>
+            {/* <Image src={thambnel} alt='not support'/> */}
         </div>
         </div>
         <div className='contect-sec2'>
