@@ -1,4 +1,4 @@
-.contect-containe{
+.contect-container{
     width: 90%;
     margin: auto;
 }
@@ -14,8 +14,13 @@
     font-weight: 500;
     padding-bottom: 20px;
 }
-
+.contect-se1 div {
+    width: 100%;
+}
 .contect-se1 div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover   ;
     border-radius: 10px;
 }
 

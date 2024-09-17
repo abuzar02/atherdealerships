@@ -90,7 +90,7 @@ const Navbar = () => {
                 )}
               </li>
               <Link href="/charging"><li className='color-blk'>Charging</li></Link>
-              <Link href="/contect"><li className='color-blk'>Contect us</li></Link>
+              <Link href="/contact"><li className='color-blk'>Contact us</li></Link>
               <Link href="/login"><li className='color-blk'>Login</li></Link>
             </ul>
           </div>
