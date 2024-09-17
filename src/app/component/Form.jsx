@@ -10,10 +10,10 @@ const Form = () => {
         pincode: '',
         email: '',
         address:'',
-        calling_time:'',
+        calling_time:'10 to 6 PM',
         qualification: '',
-        investment:'',
-        property:'',
+        investment:'Type',
+        property:'Type',
         remark:'',
         partnershipType: 'Type'
     });
@@ -66,8 +66,10 @@ const Form = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
+                 
                 />
-                <input
+               <div className='input-flex'>
+               <input
                     type="number"
                     name="number"
                     placeholder="Number"
@@ -83,6 +85,8 @@ const Form = () => {
                     onChange={handleChange}
                     required
                 />
+               </div>
+                <div className='input-flex'>
                 <input
                     type="email"
                     name="email"
@@ -97,7 +101,9 @@ const Form = () => {
                     value={formData.address}
                     onChange={handleChange}
                 />
-                 <input
+                </div>
+                <div className='input-flex'>
+                <input
                     type="text"
                     name="calling_time"
                     placeholder="Calling time"
@@ -112,29 +118,38 @@ const Form = () => {
                     onChange={handleChange}
                     required
                 />
-                 <input
-                    type="text"
+                </div>
+               <select
                     name="investment"
-                    placeholder=" Investment ₹ 0,00"
                     value={formData.investment}
                     onChange={handleChange}
                     required
-                />
-                <input
-                    type="text"
+                >
+                    <option value="Type">Type of Investment</option>
+                    <option value="25LAC">25LAC</option>
+                    <option value="55LAC">55LAC</option>
+                    <option value="1CR">1CR</option>
+                </select>
+                <select
                     name="property"
-                    placeholder="Property"
                     value={formData.property}
                     onChange={handleChange}
                     required
-                />
-                <input
+                >
+                    <option value="Type">Type of Property</option>
+                    <option value="Own">Own</option>
+                    <option value="Ranted">Ranted</option>
+                </select>
+              
+             
+              <input
                     type="text"
                     name="remark"
                     placeholder="Remark"
                     value={formData.remark}
                     onChange={handleChange}
                     required
+                    
                 />
                 <select
                     name="partnershipType"
@@ -147,6 +162,7 @@ const Form = () => {
                     <option value="Distributor">Distributor</option>
                     <option value="Sub-Distributor">Sub-Distributor</option>
                 </select>
+            
                 <input
                     className="mt-top"
                     type="submit"

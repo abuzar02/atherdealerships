@@ -44,9 +44,10 @@ form input[type="email"] {
   box-sizing: border-box;
   transition: all 0.3s ease;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 14px;
   border-radius: 5px;
   padding-left: 12px;
+  border: .1px solid #ccc;
 }
 
 form input[type="submit"] {
@@ -68,6 +69,9 @@ form input::placeholder {
   color: #888;
   font-size: 14px;
 }
+name{
+  width: 100%;
+} 
 
 .right-side {
   width: 100%;
@@ -199,6 +203,11 @@ form label {
   font-weight: 400;
   margin-bottom: 10px;
 }
+select{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 
 @media only screen and (max-width: 720px) {
   .left-side {

@@ -1,0 +1,66 @@
+.contect-containe{
+    width: 90%;
+    margin: auto;
+}
+
+.contect-se1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contect-se1 h1{
+    font-size: 50px;
+    color: rgb(34, 32, 32);
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.contect-se1 div img{
+    border-radius: 10px;
+}
+
+.contect-sec2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contect-sec2 h1{
+    color: rgb(34, 32, 32);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.contect-sec2 p{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.contect-sec2 ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 720px) {
+    .contect-se1 h1 {
+        font-size: 35px; /* Reduce font size for smaller screens */
+    }
+    
+    .contect-sec2 h1 {
+        font-size: 30px; /* Reduce font size for smaller screens */
+    }
+
+    .contect-sec2 p {
+        font-size: 14px; /* Adjust font size for paragraphs */
+    }
+    
+    .contect-sec2 ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .contect-se1 div img {
+        width: 100%; /* Ensure the image takes full width */
+        height: auto; /* Maintain aspect ratio */
+    }
+}

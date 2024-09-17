@@ -19,6 +19,7 @@ import at from "./images/at2.webp"
 import at3 from "./images/at3.webp"
 import intro1 from "./images/intro2.jpg"
 import whyinto from "./images/into1.jpg"
+import Form from './Form';
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -250,8 +251,7 @@ const Home = () => {
         <div className="popup-overlay">
           <div className="popup-content">
             <span className="close-popup" onClick={togglePopup}>&times;</span>
-            <h2>Contact Us</h2>
-            <form onSubmit={handleSubmit}>
+            {/* <form onSubmit={handleSubmit}>
               <label>
                 Name:
                 <input 
@@ -293,9 +293,11 @@ const Home = () => {
                 />
               </label>
               <button type="submit" className="submit-btn">Submit</button>
-            </form>
+            </form> */}
+             <Form/>
           </div>
         </div>
+       
       )}
     </>
   );

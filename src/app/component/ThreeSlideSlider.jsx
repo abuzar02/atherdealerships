@@ -12,6 +12,7 @@ import bannerr2 from "../component/images/bannerr2.webp"
 import helmetB from "../component/images/helmet-banner.jpg"
 import athelmet from "../component/images/athelmet.jpg"
 import atbike from "../component/images/atbike.jpg"
+import Link from 'next/link';
 
 
 
@@ -43,7 +44,7 @@ const ThreeSlideSlider = () => {
   };
 
   return (
-    <div >
+    < >
       <Slider {...settings}>
 
         <div className='banner'>
@@ -67,7 +68,7 @@ const ThreeSlideSlider = () => {
         </div>
         <div className='banner'>
           <div className="slide">
-            <Image src={helmetB}  alt='not found'/>
+            <Image src={helmetB} alt='not found' />
           </div>
           <div className="contentslide">
             <h1>Introducing Halo & Halo bit</h1>
@@ -89,13 +90,13 @@ const ThreeSlideSlider = () => {
         <div className='banner'>
           <Image src={athelmet} alt={`Slide `} />
           <div className="contentslide">
-          <h1>Introducing Halo & Halo bit</h1>
+            <h1>Introducing Halo & Halo bit</h1>
             <button>Know More</button>
             <button>Pre-book Halo</button>
           </div>
         </div>
       </Slider>
-    </div>
+    </>
   );
 };
 

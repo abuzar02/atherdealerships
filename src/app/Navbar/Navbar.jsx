@@ -84,13 +84,13 @@ const Navbar = () => {
                 {isDropdownOpen && (
                   <ul className='drop'>
                     <Link href="/distributor"><li>Distributor</li></Link>
-                    <Link href="/sub"><li>Sub-Dealership</li></Link>
                     <Link href="/dealership"><li>Dealership</li></Link>
+                    <Link href="/sub"><li>Sub-Dealership</li></Link>                  
                   </ul>
                 )}
               </li>
               <Link href="/charging"><li className='color-blk'>Charging</li></Link>
-              <Link href="/relation"><li className='color-blk'>Relation</li></Link>
+              <Link href="/contect"><li className='color-blk'>Contect us</li></Link>
               <Link href="/login"><li className='color-blk'>Login</li></Link>
             </ul>
           </div>
