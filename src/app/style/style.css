@@ -605,7 +605,7 @@ header {
   }
 
   .slick-slider {
-    z-index: -1 !important;
+    z-index: 2 !important;
   }
 
   /* Apply the 'open' class to slide in the menu */

@@ -16,6 +16,7 @@
   position: absolute;
   top: 100px;
   margin-left: 100px;
+  z-index: 999999;
 }
 
 
@@ -64,6 +65,7 @@
   .contentslide {
     top: 50px; /* Adjust top position for smaller screens */
     margin-left: 27px;
+    z-index: 99999 !important;
   }
 
   .contentslide h1 {
