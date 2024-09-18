@@ -76,22 +76,23 @@ const Navbar = () => {
               <FaXmark />
             </span>
             <ul className='d-flexx'>
-              <Link href="/"><li className='color-blk'>Home</li></Link>
-              <Link href="/About"><li className='color-blk'>About</li></Link>
+              <Link href="/" onClick={handleMenuToggle}><li className='color-blk'>Home</li></Link>
+              <Link href="/About" onClick={handleMenuToggle}><li className='color-blk'>About</li></Link>
               <li className='dlr' onClick={toggleDropdown}>
                 Partnership
                 <span><MdOutlineArrowDropDown /></span>
                 {isDropdownOpen && (
                   <ul className='drop'>
-                    <Link href="/distributor"><li>Distributor</li></Link>
-                    <Link href="/dealership"><li>Dealership</li></Link>
-                    <Link href="/sub"><li>Sub-Dealership</li></Link>                  
+                    <Link href="/dealership" onClick={handleMenuToggle}><li>Dealership</li></Link>
+                    <Link href="/distributor" onClick={handleMenuToggle}><li>Distributor</li></Link>                   
+                    <Link href="/sub" onClick={handleMenuToggle}><li>Sub-Dealership</li></Link>                  
                   </ul>
                 )}
               </li>
-              <Link href="/charging"><li className='color-blk'>Charging</li></Link>
-              <Link href="/contact"><li className='color-blk'>Contact us</li></Link>
-              <Link href="/login"><li className='color-blk'>Login</li></Link>
+              <Link href="/charging"><li className='color-blk' onClick={handleMenuToggle}>Charging</li></Link>
+              <Link href="/contact"><li className='color-blk' onClick={handleMenuToggle}>Contact us</li></Link>
+              <Link href="/CheckStatusForm"><li className='color-blk' onClick={handleMenuToggle}>status</li></Link>
+              <Link href="/login"><li className='color-blk' onClick={handleMenuToggle}>Login</li></Link>
             </ul>
           </div>
         </div>

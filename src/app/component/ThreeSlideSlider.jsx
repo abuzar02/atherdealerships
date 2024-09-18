@@ -52,8 +52,8 @@ const ThreeSlideSlider = () => {
           <div className="contentslide">
             <h1>Meet Rizta</h1>
             <p>From our family to yours</p>
-            <button>Book Know</button>
-            <button>Explore Rizta</button>
+            <Link href="/dealership"><button>Book Now</button></Link>
+            <Link href="/dealership"><button>Explore Rizta</button></Link>
           </div>
         </div>
 
@@ -62,8 +62,8 @@ const ThreeSlideSlider = () => {
           <div className="contentslide">
             <h1>Ather 450</h1>
             <p>The bike of scooter </p>
-            <button>Know More</button>
-            <button>Book a Test drive</button>
+            <Link href="/dealership"><button>Know more</button></Link>
+            <Link href="/dealership"><button>Book a test drive</button></Link>
           </div>
         </div>
         <div className='banner'>
@@ -72,8 +72,8 @@ const ThreeSlideSlider = () => {
           </div>
           <div className="contentslide">
             <h1>Introducing Halo & Halo bit</h1>
-            <button>Know More</button>
-            <button>Pre-book Halo</button>
+            <Link href="/dealership"><button>Know more</button></Link>
+            <Link href="/dealership"><button>Pre-book Halo</button></Link>
           </div>
         </div>
 
@@ -82,8 +82,8 @@ const ThreeSlideSlider = () => {
           <div className="contentslide">
             <h1>Meet Rizta</h1>
             <p>From our family to yours</p>
-            <button>Book Know</button>
-            <button>Explore Rizta</button>
+            <Link href="/dealership"><button>Know more</button></Link>
+            <Link href="/dealership"><button>Explore Rizta</button></Link>
           </div>
         </div>
 
@@ -91,8 +91,8 @@ const ThreeSlideSlider = () => {
           <Image src={athelmet} alt={`Slide `} />
           <div className="contentslide">
             <h1>Introducing Halo & Halo bit</h1>
-            <button>Know More</button>
-            <button>Pre-book Halo</button>
+            <Link href="/dealership"><button>Know more</button></Link>
+            <Link href="/dealership"><button>Pre-book Halo</button></Link>
           </div>
         </div>
       </Slider>

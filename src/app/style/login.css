@@ -21,7 +21,7 @@ form {
     color: #333;
   }
   
-  input[type="text"],
+  input[type="email"],
   input[type="password"] {
     width: 100%;
     padding: 10px;
@@ -37,7 +37,7 @@ form {
     outline: none;
   }
   
-  input[type="submit"] {
+button{
     padding: 10px 15px;
     background-color: #0070f3;
     color: white;

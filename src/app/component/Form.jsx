@@ -1,7 +1,7 @@
 "use client";
 import { useState } from 'react';
-import '../style/fomrsec.css';
 import { useRouter } from 'next/navigation';
+import '../style/fomrsec.css';
 
 const Form = () => {
     const [formData, setFormData] = useState({
@@ -9,12 +9,12 @@ const Form = () => {
         number: '',
         pincode: '',
         email: '',
-        address:'',
-        calling_time:'10 to 6 PM',
+        address: '',
+        calling_time: '10 to 6 PM',
         qualification: '',
-        investment:'Type',
-        property:'Type',
-        remark:'',
+        investment: 'Type',
+        property: 'Type',
+        remark: '',
         partnershipType: 'Type'
     });
 
@@ -26,34 +26,39 @@ const Form = () => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        
-        setLoading(true);  // Set loading to true when form submission starts
+  // app/Form.js
+const handleSubmit = async (e) => {
+    e.preventDefault();
 
-        try {
-            const response = await fetch('/api/proxy', {
-                method: 'POST',
-                body: JSON.stringify(formData),
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            });
+    setLoading(true);  // Set loading to true when form submission starts
 
-            if (response.ok) {
-                console.log("Form successfully submitted!");
-                router.push('/thank-you');
-            } else {
-                console.error('Form submission failed: ', response.statusText);
-                alert("Error in form submission");
-            }
-        } catch (error) {
-            console.error('Error submitting form', error);
-            alert("An error occurred while submitting the form");
-        } finally {
-            setLoading(false);  // Set loading to false after the form submission completes
+    try {
+        const response = await fetch('/api/leads', {
+            method: 'POST',
+            body: JSON.stringify({
+                ...formData,
+                status: 'pending'  // Ensure status is included in the request
+            }),
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        });
+
+        if (response.ok) {
+            console.log("Form successfully submitted!");
+            router.push('/thank-you');
+        } else {
+            console.error('Form submission failed: ', response.statusText);
+            alert("Error in form submission");
         }
-    };
+    } catch (error) {
+        console.error('Error submitting form', error);
+        alert("An error occurred while submitting the form");
+    } finally {
+        setLoading(false);  // Set loading to false after the form submission completes
+    }
+};
+
 
     return (
         <>
@@ -66,60 +71,59 @@ const Form = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                 
                 />
-               <div className='input-flex'>
-               <input
-                    type="number"
-                    name="number"
-                    placeholder="Number"
-                    value={formData.number}
-                    onChange={handleChange}
-                    required
-                />
-                <input
-                    type="number"
-                    name="pincode"
-                    placeholder="Pin code"
-                    value={formData.pincode}
-                    onChange={handleChange}
-                    required
-                />
-               </div>
                 <div className='input-flex'>
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    value={formData.email}
-                    onChange={handleChange}
-                />
-                 <input
-                    type="text"
-                    name="address"
-                    placeholder="Address"
-                    value={formData.address}
-                    onChange={handleChange}
-                />
+                    <input
+                        type="number"
+                        name="number"
+                        placeholder="Number"
+                        value={formData.number}
+                        onChange={handleChange}
+                        required
+                    />
+                    <input
+                        type="number"
+                        name="pincode"
+                        placeholder="Pin code"
+                        value={formData.pincode}
+                        onChange={handleChange}
+                        required
+                    />
                 </div>
                 <div className='input-flex'>
-                <input
-                    type="text"
-                    name="calling_time"
-                    placeholder="Calling time"
-                    value={formData.calling_time}
-                    onChange={handleChange}
-                />
-                <input
-                    type="text"
-                    name="qualification"
-                    placeholder="Qualification"
-                    value={formData.qualification}
-                    onChange={handleChange}
-                    required
-                />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        value={formData.email}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type="text"
+                        name="address"
+                        placeholder="Address"
+                        value={formData.address}
+                        onChange={handleChange}
+                    />
                 </div>
-               <select
+                <div className='input-flex'>
+                    <input
+                        type="text"
+                        name="calling_time"
+                        placeholder="Calling time"
+                        value={formData.calling_time}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type="text"
+                        name="qualification"
+                        placeholder="Qualification"
+                        value={formData.qualification}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+                <select
                     name="investment"
                     value={formData.investment}
                     onChange={handleChange}
@@ -138,18 +142,15 @@ const Form = () => {
                 >
                     <option value="Type">Type of Property</option>
                     <option value="Own">Own</option>
-                    <option value="Ranted">Ranted</option>
+                    <option value="Rented">Rented</option>
                 </select>
-              
-             
-              <input
+                <input
                     type="text"
                     name="remark"
                     placeholder="Remark"
                     value={formData.remark}
                     onChange={handleChange}
                     required
-                    
                 />
                 <select
                     name="partnershipType"
@@ -162,7 +163,6 @@ const Form = () => {
                     <option value="Distributor">Distributor</option>
                     <option value="Sub-Distributor">Sub-Distributor</option>
                 </select>
-            
                 <input
                     className="mt-top"
                     type="submit"

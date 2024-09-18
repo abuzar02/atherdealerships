@@ -20,6 +20,7 @@ import at3 from "./images/at3.webp"
 import intro1 from "./images/intro2.jpg"
 import whyinto from "./images/into1.jpg"
 import Form from './Form';
+import Link from 'next/link';
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -103,7 +104,7 @@ const Home = () => {
               <h1>Ather Rizta</h1>
               <p>Starting at Rs. 1,09,999</p>
               <p>or Flexipay Rs. 2199/month</p>
-              <button>Book Now</button>
+              <Link href="/dealership"><button>Test a drive</button></Link>
             </div>
           </div>
 
@@ -116,7 +117,7 @@ const Home = () => {
               <h1>Ather Rizta</h1>
               <p>Starting at Rs. 1,09,999</p>
               <p>or Flexipay Rs. 2199/month</p>
-              <button>Book Now</button>
+              <Link href="/dealership"><button>Test a drive</button></Link>
             </div>
           </div>
 
@@ -128,7 +129,7 @@ const Home = () => {
               <h1>Ather Rizta</h1>
               <p>Starting at Rs. 1,09,999</p>
               <p>or Flexipay Rs. 2199/month</p>
-              <button>Book Now</button>
+              <Link href="/dealership"><button>Test a drive</button></Link>
             </div>
           </div>
 

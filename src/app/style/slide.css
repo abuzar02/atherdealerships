@@ -31,9 +31,9 @@
   margin-top: 10px;
 }
 .contentslide button{
-  background-color: #fff;
+  background: transparent;
   font-size: 14px;
-  color: rgb(46, 44, 44);
+  color:#fff;
   font-weight: 300;
   padding: 12px 25px ;
   margin-top: 10px;
@@ -41,12 +41,18 @@
   margin-right: 10px;
   cursor: pointer;
   border-radius: 8px;
+  border: .1px solid #fff;
 }
-.contentslide :last-child{
+/* .contentslide a{
   border: 1px solid #ccc;
   background-color: transparent !important;
   color: #fff !important;
-}
+} */
+/* .contentslide :last-child{
+  border: 1px solid #ccc;
+  background-color: transparent !important;
+  color: #fff !important;
+} */
 .slide video {
   object-fit: cover;
 }
