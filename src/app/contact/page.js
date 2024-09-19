@@ -13,7 +13,7 @@ const page = () => {
         </div>
         </div>
         <div className='contect-sec2'>
-              <h1>contect us</h1>
+              <h1>contact us</h1>
               <p>
               We are a pioneering EV company committed to driving the electric mobility space in India.<br/> We believe that a seamless transition to an electric world will be driven by <br/>building deeply integrated mobility ecosystems. <br/>We do that by leveraging our deep engineering capability, to build great products and experiences across the entire EV ecosystem.
               </p>

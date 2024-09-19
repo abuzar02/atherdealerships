@@ -241,7 +241,7 @@ header {
   transform: scale(1.1);
 }
 
-.pick {
+.picc {
   width: 100%;
   height: 348px;
   position: relative;
@@ -251,7 +251,7 @@ header {
   overflow: hidden;
 }
 
-.pick img {
+.picc img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -259,16 +259,38 @@ header {
   object-fit: cover;
 }
 
-.pick img:hover {
+.picc img:hover {
   transform: scale(1.1);
 }
 
-.pick-content {
-  position: relative;
-  top: -200px;
-  padding: 10px;
-  left: 70px;
-  color: red;
+.pick-co{
+  position: absolute;
+  top: 90px;
+  left: 50px;
+}
+
+
+
+.pick-co h1 {
+  font-size: 25px;
+  color: #363434;
+}
+
+.pick-co p {
+  color: #6f6d6d;
+  margin-top: 5px;
+}
+
+.pick-co button {
+  padding: 8px 18px;
+  margin-right: 15px;
+  background-color: rgb(17, 17, 17);
+  color: #f7f7f7;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
 }
 
 .drop {
@@ -291,31 +313,6 @@ header {
 }
 .dlr{
   cursor: pointer;
-}
-
-.pick-content h1 {
-  font-size: 25px;
-  color: #363434;
-}
-
-.pick-content p {
-  color: #6f6d6d;
-  margin-top: 5px;
-}
-
-.pick-content button {
-  padding: 8px 18px;
-  margin-right: 15px;
-  background-color: rgb(17, 17, 17);
-  color: #f7f7f7;
-  font-size: 15px;
-  border-radius: 8px;
-  border: none;
-  margin-top: 15px;
-}
-
-.pick-content a {
-  border-bottom: 1px solid #0e00d5;
 }
 
 .sec4 {

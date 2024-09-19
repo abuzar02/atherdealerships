@@ -52,7 +52,7 @@ const ThreeSlideSlider = () => {
           <div className="contentslide">
             <h1>Meet Rizta</h1>
             <p>From our family to yours</p>
-            <Link href="/dealership"><button>Book Now</button></Link>
+            <Link href="/dealership"><button>Test a drive</button></Link>
             <Link href="/dealership"><button>Explore Rizta</button></Link>
           </div>
         </div>
@@ -73,7 +73,7 @@ const ThreeSlideSlider = () => {
           <div className="contentslide">
             <h1>Introducing Halo & Halo bit</h1>
             <Link href="/dealership"><button>Know more</button></Link>
-            <Link href="/dealership"><button>Pre-book Halo</button></Link>
+            <Link href="/dealership"><button>Test drive</button></Link>
           </div>
         </div>
 
@@ -92,7 +92,7 @@ const ThreeSlideSlider = () => {
           <div className="contentslide">
             <h1>Introducing Halo & Halo bit</h1>
             <Link href="/dealership"><button>Know more</button></Link>
-            <Link href="/dealership"><button>Pre-book Halo</button></Link>
+            <Link href="/dealership"><button>Test drive</button></Link>
           </div>
         </div>
       </Slider>

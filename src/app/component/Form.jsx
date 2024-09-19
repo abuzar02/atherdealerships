@@ -159,9 +159,9 @@ const handleSubmit = async (e) => {
                     required
                 >
                     <option value="Type">Type of partnership</option>
-                    <option value="Dealership">Dealership</option>
                     <option value="Distributor">Distributor</option>
-                    <option value="Sub-Distributor">Sub-Distributor</option>
+                    <option value="Dealership">Dealership</option>
+                    <option value="Sub-Distributor">Sub-Dealership</option>
                 </select>
                 <input
                     className="mt-top"

@@ -1,42 +1,16 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
 // Styles for the component
 const formContainerStyle = {
     maxWidth: '600px',
-    margin: '20px auto',
     padding: '20px',
     border: '1px solid #ddd',
     borderRadius: '8px',
     backgroundColor: '#f9f9f9',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     fontFamily: 'Arial, sans-serif',
-};
-
-const formElementStyle = {
-    marginBottom: '15px',
-};
-
-const labelStyle = {
-    display: 'block',
-    marginBottom: '5px',
-    fontWeight: 'bold',
-};
-
-const inputStyle = {
-    width: '100%',
-    padding: '10px',
-    borderRadius: '4px',
-    border: '1px solid #ccc',
-};
-
-const buttonStyle = {
-    padding: '10px 20px',
-    border: 'none',
-    borderRadius: '4px',
-    backgroundColor: '#0070f3',
-    color: '#fff',
-    cursor: 'pointer',
-    fontSize: '16px',
+    display: "contents"
 };
 
 const resultContainerStyle = {
@@ -71,15 +45,29 @@ const strongStyle = {
 
 // CheckStatusForm Component
 const CheckStatusForm = () => {
-    const [email, setEmail] = useState('');
     const [statusData, setStatusData] = useState(null);
     const [error, setError] = useState('');
+    const router = useRouter();
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setError('');
-        setStatusData(null);
+    // Fetch the status once the component mounts
+    useEffect(() => {
+        const loggedInEmail = localStorage.getItem('loggedInEmail');
+        const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
 
+        if (!isLoggedIn) {
+            router.push('/login'); // Redirect to login page if not logged in
+            return;
+        }
+
+        if (loggedInEmail) {
+            fetchStatus(loggedInEmail);
+        } else {
+            setError('No user logged in');
+        }
+    }, [router]);
+
+    // Function to fetch status data
+    const fetchStatus = async (email) => {
         try {
             const response = await fetch('/api/check-status', {
                 method: 'POST',
@@ -103,22 +91,6 @@ const CheckStatusForm = () => {
 
     return (
         <div style={formContainerStyle}>
-            <h1>Check Your Status</h1>
-            <form onSubmit={handleSubmit}>
-                <div style={formElementStyle}>
-                    <label htmlFor="email" style={labelStyle}>Enter your email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                        style={inputStyle}
-                    />
-                </div>
-                <button type="submit" style={buttonStyle}>Check Status</button>
-            </form>
-
             {error && <p style={{ color: 'red' }}>{error}</p>}
 
             {statusData && (

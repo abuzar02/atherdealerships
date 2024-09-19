@@ -17,11 +17,15 @@ const Footer = () => {
           </div>
          <div className='termsec'>
          <div  >
-          <Link href="/privicy"><span className='privi'>Privacy & Policy</span></Link>
+          <Link href="/privicy"><span className='privi'>Privacy Policy</span></Link>
           </div>
           <p className='sp'>/</p>
           <div>
-          <Link href="/termandcondition"><span className='privi'>Terms & Condition</span></Link>
+          <Link href="/termandcondition"><span className='privi'>Terms Condition</span></Link>
+          </div>
+          <p className='sp'>/</p>
+          <div>
+          <Link href="/refund"><span className='privi'>Refund policy</span></Link>
           </div>
          </div>
         </div>

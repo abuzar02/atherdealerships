@@ -83,8 +83,8 @@ const Navbar = () => {
                 <span><MdOutlineArrowDropDown /></span>
                 {isDropdownOpen && (
                   <ul className='drop'>
-                    <Link href="/dealership" onClick={handleMenuToggle}><li>Dealership</li></Link>
-                    <Link href="/distributor" onClick={handleMenuToggle}><li>Distributor</li></Link>                   
+                     <Link href="/distributor" onClick={handleMenuToggle}><li>Distributor</li></Link> 
+                    <Link href="/dealership" onClick={handleMenuToggle}><li>Dealership</li></Link>                
                     <Link href="/sub" onClick={handleMenuToggle}><li>Sub-Dealership</li></Link>                  
                   </ul>
                 )}
@@ -92,7 +92,6 @@ const Navbar = () => {
               <Link href="/charging"><li className='color-blk' onClick={handleMenuToggle}>Charging</li></Link>
               <Link href="/contact"><li className='color-blk' onClick={handleMenuToggle}>Contact us</li></Link>
               <Link href="/CheckStatusForm"><li className='color-blk' onClick={handleMenuToggle}>status</li></Link>
-              <Link href="/login"><li className='color-blk' onClick={handleMenuToggle}>Login</li></Link>
             </ul>
           </div>
         </div>

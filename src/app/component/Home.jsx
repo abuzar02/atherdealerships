@@ -84,14 +84,14 @@ const Home = () => {
 
         <div className="pa"><h1>Pick your Ather</h1></div>
 
-        <div className="pick">
+        <div className="picc">
           <Image src={pick} alt="not support" />
-          <div className="pick-content">
+          <div className="pick-co">
             <marquee behavior="smooth" direction="right">All New</marquee>
             <h1>Ather Rizta</h1>
             <p>Starting at Rs. 1,09,999</p>
             <p>or Flexipay Rs. 2199/month</p>
-            <button>Book Now</button>
+            <Link href="/dealership"><button>Test drive</button></Link>
           </div>
         </div>
 
@@ -101,9 +101,9 @@ const Home = () => {
               <Image src={pick2} alt="not support" />
             </div>
             <div className="s-img-con">
-              <h1>Ather Rizta</h1>
-              <p>Starting at Rs. 1,09,999</p>
-              <p>or Flexipay Rs. 2199/month</p>
+              <h1>Ather 450S</h1>
+              <p>Starting at ₹ 1 15 599</p>
+              <p>Or Flexipay ₹ 2 475/monthicon</p>
               <Link href="/dealership"><button>Test a drive</button></Link>
             </div>
           </div>
@@ -114,9 +114,9 @@ const Home = () => {
               <Image src={pick3} alt="not support" />
             </div>
             <div className="s-img-con">
-              <h1>Ather Rizta</h1>
-              <p>Starting at Rs. 1,09,999</p>
-              <p>or Flexipay Rs. 2199/month</p>
+              <h1>Ather 450X</h1>
+              <p>Starting at ₹ 1 40 599</p>
+              <p>Or Flexipay ₹ 2 789/monthicon</p>
               <Link href="/dealership"><button>Test a drive</button></Link>
             </div>
           </div>
@@ -126,9 +126,9 @@ const Home = () => {
               <Image src={pick4} alt="not support" />
             </div>
             <div className="s-img-con">
-              <h1>Ather Rizta</h1>
-              <p>Starting at Rs. 1,09,999</p>
-              <p>or Flexipay Rs. 2199/month</p>
+              <h1>Ather 450 Apex</h1>
+              <p>Starting at ₹ 1 94 999</p>
+              <p>Or Flexipay ₹ 3 439/monthicon</p>
               <Link href="/dealership"><button>Test a drive</button></Link>
             </div>
           </div>
@@ -205,8 +205,8 @@ const Home = () => {
             </div>
             <div className="content-charge">
               <p>Abishek. 4min read .24june 2024</p>
-              <h1>You all need to konw about electric Scooter....</h1>
-              <p>Discover the electric scooter charging cost in india...</p>
+              <h1>All You Need to Know About Electric Scooter C ..</h1>
+              <p>Discover the electric scooter charging cost in India wi ...</p>
             </div>
           </div>
 
@@ -215,9 +215,9 @@ const Home = () => {
               <Image src={athercharge} alt="not support" />
             </div>
             <div className="content-charge">
-              <p>Abishek. 4min read .24june 2024</p>
-              <h1>You all need to konw about electric Scooter....</h1>
-              <p>Discover the electric scooter charging cost in india...</p>
+              <p>Garima P. 3 min read .24 Jun, 2024</p>
+              <h1>Safety Measures for Charging Your Electric Sc ...</h1>
+              <p>Learn how to charge an electric scooter at home. Click  ...</p>
             </div>
           </div>
 
@@ -229,9 +229,9 @@ const Home = () => {
               <Image src={at} alt="not support" />
             </div>
             <div className="content-charge">
-              <p>Abishek. 4min read .24june 2024</p>
-              <h1>You all need to konw about electric Scooter....</h1>
-              <p>Discover the electric scooter charging cost in india...</p>
+              <p>Atul Rajan. 7 min read . 24 Jun, 2024</p>
+              <h1>How to Choose the Best Electric Scooter for W ...</h1>
+              <p>Explore the things to consider before buying an electri ...</p>
             </div>
           </div>
 
@@ -240,9 +240,9 @@ const Home = () => {
               <Image src={at3} alt="not support" />
             </div>
             <div className="content-charge">
-              <p>Abishek. 4min read .24june 2024</p>
-              <h1>You all need to konw about electric Scooter....</h1>
-              <p>Discover the electric scooter charging cost in india...</p>
+              <p>Mathew J. 4min read .24 Jun, 2024</p>
+              <h1>Things to know about Ather 450 Apex Electric  ...</h1>
+              <p>Discover more about the Ather 450 Apex, the fastest ele ...</p>
             </div>
           </div>
         </div>

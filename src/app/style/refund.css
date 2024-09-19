@@ -1,0 +1,20 @@
+body{
+    background-color: #d1d1d1;
+}
+.rrefund-container{
+    width: 90%;
+    margin: auto;
+}
+.rrefund-container h2{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 22px;
+}
+.rrefund-container p{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-bottom: 120px;
+}
