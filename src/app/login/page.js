@@ -48,15 +48,15 @@ const Login = () => {
     <div className="login-container">
       <form onSubmit={handleSubmit}>
         <h1>Login</h1>
-        <label>Email or Mobile Number:</label>
+        <label>Email:</label>
         <input 
-          type='text' 
-          placeholder='Email or Mobile Number' 
+          type='email' 
+          placeholder='Email' 
           value={email} 
           onChange={(e) => setEmail(e.target.value)} 
           required
         />
-        <label>Password:</label>
+        <label>Password or Mobile Number:</label>
         <input 
           type='password' 
           placeholder='Password' 
