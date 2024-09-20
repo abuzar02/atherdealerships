@@ -3,9 +3,9 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import "../style/login.css";
 
-const Login = () => {
+const Page = () => {
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState(''); // Mobile number will be used as the password
+  const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const router = useRouter();
 
@@ -19,7 +19,7 @@ const Login = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email, password }), // Password is the mobile number
+        body: JSON.stringify({ email, password }),
       });
 
       const data = await response.json();
@@ -27,12 +27,11 @@ const Login = () => {
       if (response.ok) {
         localStorage.setItem('loggedIn', 'true');
         localStorage.setItem('userType', data.role);
-        localStorage.setItem('loggedInEmail', email);
 
         if (data.role === 'admin') {
-          router.push('/admin'); // Admin redirect
+          router.push('/admin'); // Redirect to admin dashboard
         } else {
-          router.push('/'); // User redirect
+          setError('Only admin can access this page');
         }
       } else {
         setError(data.message || 'Login failed');
@@ -43,22 +42,22 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container">
-      <form onSubmit={handleSubmit} className="login-form">
-        <h1 className='hed'>Login</h1>
+    <div className="admin-login-container">
+      <form onSubmit={handleSubmit} className="admin-login-form">
+        <h1>Admin Login</h1>
         <label>Email:</label>
         <input
           type="text"
-          placeholder="Email or Mobile Number"
+          placeholder="Admin Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        <label>Mobile Number (as Password):</label> {/* Update label for clarity */}
+        <label>Password:</label>
         <input
-          type="text"
-          placeholder="Mobile Number"
-          value={password} // The 'password' field will accept the mobile number
+          type="password"
+          placeholder="Password"
+          value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
@@ -69,4 +68,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Page;

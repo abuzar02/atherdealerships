@@ -1,24 +1,25 @@
-"use client"
+"use client";
 import { useEffect, useState } from 'react';
 import AdminPanel from '../component/Admin';
-import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation';
 
 const AdminPage = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
-    // Check login status from localStorage or cookie
     const loggedIn = localStorage.getItem('loggedIn') === 'true';
-    if (!loggedIn) {
-      router.push('/login');
+    const userType = localStorage.getItem('userType'); // 'admin' or 'user'
+
+    if (!loggedIn || userType !== 'admin') {
+      router.push('/admin-login'); // Redirect to admin login if not an admin
     } else {
-      setIsLoggedIn(true);
+      setIsAdmin(true); // Allow access if admin
     }
   }, [router]);
 
-  if (!isLoggedIn) {
-    return null; // You can also show a loading spinner here
+  if (!isAdmin) {
+    return null; // Optionally, add a loading spinner here
   }
 
   return (

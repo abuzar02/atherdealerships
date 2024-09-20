@@ -4,7 +4,7 @@ const LeadSchema = new mongoose.Schema({
     name: { type: String, required: true },
     number: { type: String, required: true },
     pincode: { type: String, required: true },
-    email: { type: String, required: true },
+    email: { type: String, required: true, unique:true},
     address: { type: String, required: false },
     calling_time: { type: String, required: false },
     qualification: { type: String, required: true },

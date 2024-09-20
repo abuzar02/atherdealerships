@@ -10,7 +10,7 @@ const formContainerStyle = {
     backgroundColor: '#f9f9f9',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     fontFamily: 'Arial, sans-serif',
-    display: "contents"
+    display: "contents;"
 };
 
 const resultContainerStyle = {
@@ -54,16 +54,12 @@ const CheckStatusForm = () => {
         const loggedInEmail = localStorage.getItem('loggedInEmail');
         const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
 
-        if (!isLoggedIn) {
+        if (!isLoggedIn || !loggedInEmail) {
             router.push('/login'); // Redirect to login page if not logged in
             return;
         }
 
-        if (loggedInEmail) {
-            fetchStatus(loggedInEmail);
-        } else {
-            setError('No user logged in');
-        }
+        fetchStatus(loggedInEmail);
     }, [router]);
 
     // Function to fetch status data
