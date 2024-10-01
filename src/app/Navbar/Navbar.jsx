@@ -79,7 +79,7 @@ const Navbar = () => {
               <Link href="/" onClick={handleMenuToggle}><li className='color-blk'>Home</li></Link>
               <Link href="/About" onClick={handleMenuToggle}><li className='color-blk'>About</li></Link>
               <li className='dlr' onClick={toggleDropdown}>
-                Partnership
+                Apply Now
                 <span><MdOutlineArrowDropDown /></span>
                 {isDropdownOpen && (
                   <ul className='drop'>

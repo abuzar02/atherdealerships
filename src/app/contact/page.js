@@ -23,6 +23,13 @@ const page = () => {
                 <li><a href='care@atherdealerships.com'>care@atherdealerships.com</a></li>
                 <li><a href='support@atherdealerships.com'>support@atherdealerships.com</a></li>
               </ul>
+
+              <div className='mart'>
+                <h1>Address :</h1>
+                <p>Corporate Office : - Third Floor Tower D,</p>
+                <p>IBC Knowladge Park, Bannerghatta Main Road,</p>
+                <p>Bengluru,Karnataka 560029.</p>
+              </div>
         </div>
     </div>
     </>

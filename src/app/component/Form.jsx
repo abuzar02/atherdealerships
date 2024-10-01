@@ -63,7 +63,7 @@ const handleSubmit = async (e) => {
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <h1>Application Form</h1>
+                <h1>Apply Now</h1>
                 <input
                     type="text"
                     name="name"
