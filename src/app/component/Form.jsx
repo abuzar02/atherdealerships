@@ -158,7 +158,7 @@ const handleSubmit = async (e) => {
                     onChange={handleChange}
                     required
                 >
-                    <option value="Type">Type of partnership</option>
+                    <option value="Type">Apply Now</option>
                     <option value="Distributor">Distributor</option>
                     <option value="Dealership">Dealership</option>
                     <option value="Sub-Distributor">Sub-Dealership</option>
